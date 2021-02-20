@@ -11,3 +11,5 @@ test: main_test.cc
 clean:
 	@rm -f compile test
 
+lint: main.cc fib.cc
+	@clang-tidy --checks=cppcoreguidelines-* $^
