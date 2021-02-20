@@ -1,4 +1,4 @@
-#include "fib.cc"
+#include "fib.cpp"
 #include <iostream>
 
 using namespace std;

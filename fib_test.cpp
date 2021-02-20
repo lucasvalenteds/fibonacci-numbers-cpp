@@ -1,4 +1,4 @@
-#include "fib.cc"
+#include "fib.cpp"
 #include <gtest/gtest.h>
 #include <vector>
 

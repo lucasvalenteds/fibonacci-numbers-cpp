@@ -1,4 +1,4 @@
-#include "fib_test.cc"
+#include "fib_test.cpp"
 #include <gtest/gtest.h>
 
 using namespace testing;
