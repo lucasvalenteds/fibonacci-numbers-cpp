@@ -13,3 +13,7 @@ clean:
 
 lint: main.cc fib.cc
 	@clang-tidy --checks=cppcoreguidelines-* $^
+
+format:
+	@clang-format -i --style="{BasedOnStyle: llvm, IndentWidth: 4}" *.cc
+

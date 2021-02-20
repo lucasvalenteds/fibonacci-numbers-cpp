@@ -1,6 +1,6 @@
+#include "fib.cc"
 #include <gtest/gtest.h>
 #include <vector>
-#include "fib.cc"
 
 using namespace std;
 using namespace testing;
@@ -27,7 +27,7 @@ TEST(FibonacciSeries, TwoNumbers) {
 }
 
 TEST(FibonacciSeries, ManyNumbers) {
-    vector<long> expected_numbers {0, 1, 1, 2, 3, 5, 8, 13, 21, 34};
+    vector<long> expected_numbers{0, 1, 1, 2, 3, 5, 8, 13, 21, 34};
     vector<long> numbers = fibonacci_series(10);
 
     EXPECT_EQ(expected_numbers.size(), numbers.size());
@@ -37,4 +37,3 @@ TEST(FibonacciSeries, ManyNumbers) {
         EXPECT_EQ(expected_numbers[index], number);
     }
 }
-

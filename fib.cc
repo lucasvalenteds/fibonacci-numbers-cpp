@@ -15,7 +15,7 @@ vector<long> fibonacci_series(int amount_of_numbers) {
         return {FIRST_FIBONACCI_NUMBER};
     }
 
-    vector<long> series {FIRST_FIBONACCI_NUMBER, SECOND_FIBONACCI_NUMBER};
+    vector<long> series{FIRST_FIBONACCI_NUMBER, SECOND_FIBONACCI_NUMBER};
     for (int i = series.size(); i < amount_of_numbers; i++) {
         long last = series[series.size() - 1];
         long before_last = series[series.size() - 2];
@@ -24,4 +24,3 @@ vector<long> fibonacci_series(int amount_of_numbers) {
 
     return series;
 }
-
