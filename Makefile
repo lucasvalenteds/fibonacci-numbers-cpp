@@ -1,4 +1,4 @@
-COMPILER := g++-10
+COMPILER := g++
 COMPILER_FLAGS := -g -Wall -O2
 LIBRARIES := -lgtest
 
