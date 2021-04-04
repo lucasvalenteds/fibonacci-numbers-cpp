@@ -28,11 +28,11 @@ TEST(FibonacciSeries, TwoNumbers) {
 
 TEST(FibonacciSeries, ManyNumbers) {
     vector<long> expected_numbers{0, 1, 1, 2, 3, 5, 8, 13, 21, 34};
-    vector<long> numbers = fibonacci_series(10);
+    vector<long> actual_numbers = fibonacci_series(expected_numbers.size());
 
-    EXPECT_EQ(expected_numbers.size(), numbers.size());
-    for (auto &number : numbers) {
-        auto index = &number - &numbers[0];
+    EXPECT_EQ(expected_numbers.size(), actual_numbers.size());
+    for (auto &number : actual_numbers) {
+        auto index = &number - &actual_numbers[0];
 
         EXPECT_EQ(expected_numbers[index], number);
     }
